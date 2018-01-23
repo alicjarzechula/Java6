@@ -11,6 +11,9 @@ public class Calculator {
         return a*b;
     }
     public float by(float a, float b){
+        if(b==0){
+            throw new IllegalArgumentException("Division by 0!");
+        }
         return a/b;
     }
 }
